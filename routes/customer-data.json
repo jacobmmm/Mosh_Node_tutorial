@@ -1,0 +1,5 @@
+[
+    {"isGold":false, "name":"Roger","phone":"4987621343"},
+    {"isGold":true, "name":"Jacob","phone":"4987697643"},
+    {"isGold":false, "name":"Karan","phone":"4987622143"}
+    ]
