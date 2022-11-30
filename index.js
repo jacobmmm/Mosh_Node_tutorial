@@ -1,7 +1,7 @@
 //require('express-async-errors')
 const winston = require('winston')
 //require('winston-mongodb')
-const error = require("./middleware/error")
+//const error = require("./middleware/error")
 
 //const config = require('config')
 //const Joi = require('joi')
@@ -46,7 +46,7 @@ process.on('unhandledRejection', (ex) => {
 winston.add(new winston.transports.File({ filename: 'logfile.log' }))
 winston.add(new winston.transports.MongoDB({db:'mongodb://0.0.0.0:27017/genre-collection', level: 'error'}))*/
 
-throw new Error('Something failed during startup')
+//throw new Error('Something failed during startup')
 
 /*const p = Promise.reject(new Error('Something failed miserably!'))
 p.then(() => console.log('Done'))*/
