@@ -38,6 +38,11 @@ const Genre = mongoose.model('genres', genreSchema)*/
     res.send(genres)
 });*/
 
+router.use((req, res, next) => {
+    console.log('Time: ', Date.now())
+    next()
+  })
+
 
 
 router.get('/', async (req, res) =>{
